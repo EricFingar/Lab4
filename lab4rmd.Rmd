@@ -74,7 +74,7 @@ You can also find this information [here](https://rstudio-education.github.io/ds
 To help with our analysis we will also use a dataset on US states, which is located in your repository's `data` folder.
 
 ```{r}
-states <- read_csv("data/states.csv")
+states <- read_csv("states.csv")
 ```
 
 Each observation in this dataset represents a state, including DC.
@@ -82,13 +82,15 @@ Along with the name of the state we have the two-letter abbreviation and we have
 
 # Exercises
 
-1.  What are the dimensions of the Denny's dataset?
-    (Hint: Use inline R code and functions like `nrow` and `ncol` to compose your answer.) What does each row in the dataset represent?
-    What are the variables?
+```{r}
+# Get the number of rows (observations)
+num_rows <- nrow(states)
 
-2.  What are the dimensions of the La Quinta's dataset?
-    What does each row in the dataset represent?
-    What are the variables?
+# Get the number of columns (variables)
+num_cols <- ncol(states)
+
+```
+
 
 🧶 ✅ ⬆️ Knit, *commit, and push your changes to GitHub with an appropriate commit message. Make sure to commit and push all changed files so that your Git pane is cleared up afterwards.*
 
